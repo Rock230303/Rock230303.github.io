@@ -2,7 +2,7 @@
 layout: post
 title: DEMO1
 date: 2024-04-01
-categories: [fiction, jekyll, "Vedio"]
+categories: [fiction, jekyll]
 ---
 
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`
