@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DEMO1
+title: jekyll
 date: 2024-04-01
 categories: ["jekyll", "Test Post", "first post"]
 ---
