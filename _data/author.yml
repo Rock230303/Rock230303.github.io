@@ -29,7 +29,11 @@ contact:
     url: https://www.douyin.com/user/MS4wLjABAAAAjfICqZcWRWv6vO_Z8qAC_jfPEzpspNChudeWoqbN6RA
 
 categories:  
-  - name: one  
+  - name: code_1  
     url: https://github.com/rock230303
-  - name: two  
+  - name: vedio_1  
     url: https://www.baidu.com/  
+  - name: code_2  
+    url: https://www.bilibili.com/
+  - name: vedio_2  
+    url: https://www.ghxi.com/
