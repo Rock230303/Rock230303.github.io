@@ -1,10 +1,10 @@
-title: Web of DonghuaTan
+title: TanDonghua' Web
 markdown: kramdown
 
 # for atom feed
 author:
   name: Sharad Raj Singh Maurya
-  email: dev_sharad@outlook.com
+  email: tandonghua_rock@163.com
 
 plugins:
   - jemoji
