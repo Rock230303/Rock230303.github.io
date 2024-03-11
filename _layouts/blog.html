@@ -13,9 +13,9 @@
           <small class="date">{{post.date | date_to_string}}</small>
           <div class="categories">  
             {% for c in post.categories %}  
-            {% for cat in site.categories %}  
-            {% if c == cat.name %}  
-            <a href="{{ cat.url }}" data-base-url="{{site.baseurl}}" class="category">{{ c }}</a>  
+            {% for i in site.data.author.categories %}
+            {% if c == i.name %}  
+            <a href="{{i.url}}" target="_blank" data-base-url="{{site.baseurl}}" class="category">{{ c }}</a>  
             {% endif %}  
             {% endfor %}  
             {% endfor %}  
