@@ -2,7 +2,7 @@
 layout: post
 title: jekyll
 date: 2024-03-10
-categories: ["Code", "Infor", "first post"]
+categories: ["Code", "Infor", "fiction"]
 ---
 
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`
