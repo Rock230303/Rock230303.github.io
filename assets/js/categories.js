@@ -9,7 +9,6 @@ window.onload = function () {
   document.querySelectorAll(".category").forEach((category) => {
     category.addEventListener("click", function (e) {
       const posts = categories[e.target.innerText.replace(" ","_")];
-      posts.target = "_blank";
 
     });
   });

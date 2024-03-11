@@ -17,6 +17,13 @@ collections:
   posts:
     output: true
 
+categories:  
+  - name: one  
+    url: https://www.example1.com/  
+  - name: two  
+    url: https://www.example2.com/  
+
+
 defaults:
   - scope:
       path: "_posts"

@@ -11,12 +11,14 @@
             <a href="{{site.baseurl}}{{post.url}}"> {{post.title}} </a>
           </h2>
           <small class="date">{{post.date | date_to_string}}</small>
-          <div class="categories">
-            {% for c in post.categories %}
-            <a href="https://www.bilibili.com/" data-base-url="{{site.baseurl}}" class="category"
-              >{{c}}</a
-            >
-            {% endfor %}
+          <div class="categories">  
+            {% for c in post.categories %}  
+            {% for cat in site.categories %}  
+            {% if c == cat.name %}  
+            <a href="{{ cat.url }}" data-base-url="{{site.baseurl}}" class="category">{{ c }}</a>  
+            {% endif %}  
+            {% endfor %}  
+            {% endfor %}  
           </div>
         </article>
         {%endfor%}
