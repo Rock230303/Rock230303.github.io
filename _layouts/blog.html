@@ -13,7 +13,7 @@
           <small class="date">{{post.date | date_to_string}}</small>
           <div class="categories">
             {% for c in post.categories %}
-            <a href="#!" data-base-url="https://www.bilibili.com/" class="category"
+            <a href="https://www.bilibili.com" data-base-url="{{site.baseurl}}" class="category"
               >{{c}}</a
             >
             {% endfor %}
