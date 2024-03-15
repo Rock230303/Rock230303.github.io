@@ -1,4 +1,0 @@
----
-title: Rock
-layout: blog
----
