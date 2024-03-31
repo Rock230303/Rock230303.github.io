@@ -9,6 +9,7 @@ asset/css
    -blog 首页格式
    -post 子页格式
 
-data/author  &  
+data/author.yml  个人信息
+config.yml   
 
 include & layout   生成网页
