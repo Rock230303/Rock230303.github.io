@@ -145,7 +145,7 @@ main {
   font-size: 0.8rem;
 }
 .articles .article .categories {
-  order: 4;
+  order: 5;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
