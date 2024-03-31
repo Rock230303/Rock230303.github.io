@@ -145,11 +145,11 @@ main {
   font-size: 0.8rem;
 }
 .articles .article .categories {
-  margin-top: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
+  margin-top: auto;
 }
 .articles .article .categories .category {
   margin: 0 0.5rem 0.3rem 0;
