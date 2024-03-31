@@ -85,8 +85,8 @@ main {
 }
 #social-wrapper img {
   filter: invert() !important;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   margin: 0 0 0.3rem 0;
   transition: all 0.2s ease-in-out;
 }
