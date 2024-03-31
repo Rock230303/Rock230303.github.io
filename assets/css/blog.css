@@ -111,18 +111,22 @@ main {
 
 /* article section */
 
-.articles {
-  display: grid;
-  row-gap: 2rem;
-  margin: 4rem 0 3rem 0;
-  max-width: 650px;
-  margin: 0 auto;
-}
-.articles .article {
-  padding: 2rem;
-  background: var(--gray-3);
-  border-radius: 15px;
-  transition: all 0.2s ease-in-out;
+.articles {  
+  display: flex;  
+  flex-wrap: wrap; /* 允许子项换行 */  
+  justify-content: space-between; /* 在主轴上分配空间 */  
+  row-gap: 2rem; /* 设置行之间的间隙 */  
+  margin: 4rem 0 3rem 0;  
+}  
+  
+.articles .article {  
+  flex: 0 0 calc(50% - 1rem); /* 设置每个article占据的空间，减去一半的间隙 */  
+  max-width: calc(50% - 1rem); /* 最大宽度也设置为50%减去间隙 */  
+  padding: 2rem;  
+  background: var(--gray-3);  
+  border-radius: 15px;  
+  transition: all 0.2s ease-in-out;  
+  box-sizing: border-box; /* 确保padding和border不会增加元素的总宽度 */  
 }
 .articles .article .article-title,
 .articles .article .article-title a {
