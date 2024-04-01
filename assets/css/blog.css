@@ -27,6 +27,8 @@ header {
   align-items: flex-start;
   justify-content: space-between;
   gap: 1rem;
+  max-width: 950px;
+  margin: 0 auto;
 }
 header .site-title {
   font-size: 4rem;
@@ -36,7 +38,7 @@ header .site-title {
 }
 main {
   margin: 0 auto;
-  max-width: 950px;
+  max-width: 1050px;
   padding: 3rem 0;
 }
 
@@ -47,17 +49,19 @@ main {
   justify-content: flex-start;
   align-items: center;
   max-width: 850px;
+  margin: 0 auto;
 }
 #img-wrapper img {
   border-radius: 50%;
   max-width: 200px;
 }
 #bio-wrapper {
-  margin-left: 2rem;
+  margin-left: 1.5rem;
 }
 #text-wrapper {
   line-height: 1.2rem;
-  font-weight: 300;
+  font-weight: 500;
+  font-size: 1rem;
 }
 #text-wrapper a {
   color: cyan;
@@ -82,7 +86,7 @@ main {
   }
 }
 #social-wrapper {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 #social-wrapper img {
   filter: invert() !important;
@@ -113,6 +117,7 @@ main {
 /* article section */
 
 .articles {  
+  font-family: "Times New Roman", Times, serif; 
   display: flex;  
   flex-wrap: wrap; /* 允许子项换行 */  
   justify-content: space-between; /* 在主轴上分配空间 */  
@@ -128,6 +133,11 @@ main {
   border-radius: 15px;  
   transition: all 0.2s ease-in-out;  
   box-sizing: border-box; /* 确保padding和border不会增加元素的总宽度 */  
+
+  display: flex; /* 确保.article是一个flex容器 */  
+  flex-direction: column; /* 设置flex子项垂直排列 */  
+  justify-content: space-between; /* 垂直方向上分布内容 */  
+  padding-bottom: 1rem; /* 为底部内容留出空间 */  
 }
 .articles .article .article-title,
 .articles .article .article-title a {
@@ -140,10 +150,20 @@ main {
 .articles .article:hover {
   transform: scale(1.05);
 }
+.articles .article .content {  
+
+  /* 你可以添加一个包装元素来包含除了.categories之外的所有内容 */  
+
+  flex: 1; /* 占据除了.categories之外的所有可用空间 */  
+
+  /* ... 其他样式，比如padding等 ... */  
+
+}  
 .articles .article .date {
   display: block;
   font-size: 0.8rem;
 }
+
 .articles .article .categories {
   display: flex;
   flex-direction: row;
