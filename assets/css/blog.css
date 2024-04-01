@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,300;0,400;0,800;1,100;1,300;1,400;1,800&display=swap");
+
+* {
+  font-family: inherit;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  -webkit-user-drag: none;
+  -moz-window-dragging: none;
+  -webkit-tap-highlight-color: transparent;
+}
+* img {
+  max-width: 100%;
+}
+html,
+body {
+  color: var(--white-2);
+  background-color: var(--gray-6);
+  font-family: "JetBrains Mono", monospace;
+  line-height: 2rem;
+  background-color: var(--gray-5);
+}
+header {
+  padding: 2rem 0 4rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 950px;
+  margin: 0 auto;
+}
+header .site-title {
+  font-size: 4rem;
+  font-weight: bolder;
+  line-height: 110%;
+  color: var(--white-1);
+}
+main {
+  margin: 0 auto;
+  max-width: 1050px;
+  padding: 3rem 0;
+}
+
+/* header */
+
+#bio {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 850px;
+  margin: 0 auto;
+}
+#img-wrapper img {
+  border-radius: 50%;
+  max-width: 200px;
+}
+#bio-wrapper {
+  margin-left: 1.5rem;
+}
+#text-wrapper {
+  line-height: 1.2rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+#text-wrapper a {
+  color: cyan;
+  border-bottom: 1px solid cyan;
+}
+@media (prefers-color-scheme: light) {
+  #text-wrapper a {
+    color: #1ebaba;
+    border-bottom: 1px solid #1ebaba;
+  }
+}
+[data-theme="light"] {
+  #text-wrapper a {
+    color: #1ebaba;
+    border-bottom: 1px solid #1ebaba;
+  }
+}
+[data-theme="dark"] {
+  #text-wrapper a {
+    color: cyan;
+    border-bottom: 1px solid cyan;
+  }
+}
+#social-wrapper {
+  margin-top: 1.5rem;
+}
+#social-wrapper img {
+  filter: invert() !important;
+  width: 30px;
+  height: 30px;
+  margin: 0 0 0.3rem 0;
+  transition: all 0.2s ease-in-out;
+}
+@media (prefers-color-scheme: light) {
+  #social-wrapper img {
+    filter: none !important;
+  }
+}
+[data-theme="light"] {
+  #social-wrapper img {
+    filter: none !important;
+  }
+}
+[data-theme="dark"] {
+  #social-wrapper img {
+    filter: invert() !important;
+  }
+}
+#social-wrapper img:hover {
+  transform: scale(1.2);
+}
+
+/* article section */
+
+.articles {  
+  font-family: "Times New Roman", Times, serif; 
+  display: flex;  
+  flex-wrap: wrap; /* 允许子项换行 */  
+  justify-content: space-between; /* 在主轴上分配空间 */  
+  row-gap: 2rem; /* 设置行之间的间隙 */  
+  margin: 4rem 0 3rem 0;  
+}  
+  
+.articles .article {  
+  flex: 0 0 calc(50% - 1rem); /* 设置每个article占据的空间，减去一半的间隙 */  
+  max-width: calc(50% - 1rem); /* 最大宽度也设置为50%减去间隙 */  
+  padding: 2rem;  
+  background: var(--gray-3);  
+  border-radius: 15px;  
+  transition: all 0.2s ease-in-out;  
+  box-sizing: border-box; /* 确保padding和border不会增加元素的总宽度 */  
+
+  display: flex; /* 确保.article是一个flex容器 */  
+  flex-direction: column; /* 设置flex子项垂直排列 */  
+  justify-content: space-between; /* 垂直方向上分布内容 */  
+  padding-bottom: 1rem; /* 为底部内容留出空间 */  
+}
+.articles .article .article-title,
+.articles .article .article-title a {
+  color: var(--white-2);
+  font-weight: 100;
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 130%;
+}
+.articles .article:hover {
+  transform: scale(1.05);
+}
+.articles .article .content {  
+
+  /* 你可以添加一个包装元素来包含除了.categories之外的所有内容 */  
+
+  flex: 1; /* 占据除了.categories之外的所有可用空间 */  
+
+  /* ... 其他样式，比如padding等 ... */  
+
+}  
+.articles .article .date {
+  display: block;
+  font-size: 0.8rem;
+}
+
+.articles .article .categories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: auto;
+}
+.articles .article .categories .category {
+  margin: 0 0.5rem 0.3rem 0;
+  display: block;
+  color: var(--gray-4);
+  background: var(--white-2);
+  border-radius: 15px;
+  font-size: 0.7rem;
+  padding: 0 0.8rem;
+  line-height: 1.3rem;
+  cursor: pointer;
+}
+/* media query */
+
+@media screen and (max-width: 750px) {
+  body {
+    padding: 1.5rem;
+  }
+  header {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  header #dark-mode-toggle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-self: flex-end;
+  }
+  header .site-title {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  header .site-title {
+    font-size: 3rem;
+  }
+  .articles {
+    row-gap: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #img-wrapper img {
+    max-width: 50px;
+  }
+  #bio {
+    align-items: flex-start;
+  }
+  main,
+  .articles {
+    padding: 0;
+    margin: 0;
+  }
+  main {
+    padding-bottom: 1rem;
+  }
+  .articles {
+    margin: 2rem 0 3rem 0;
+    row-gap: 1.2rem;
+  }
+  header .site-title {
+    font-size: 2.4rem;
+  }
+  .article {
+    padding: 1.2rem;
+  }
+  .articles .article .article-title,
+  .articles .article .article-title a {
+    font-size: 1rem;
+  }
+}
