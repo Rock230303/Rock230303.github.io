@@ -19,8 +19,9 @@ config.yml
 include & layout   
    -生成网页
 
-
+<br>
 2024-4-1：
+
 修改了文章部分两列显示
 
 修改main宽度950px
@@ -32,6 +33,7 @@ include & layout
 <br>
 
 2024-4-10：
+
 bio部分居中已解决
 
 文章标签按钮固定位置已解决
